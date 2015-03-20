@@ -14,7 +14,7 @@
   "license": "Apache v2.0",
   "dependencies": {},
   "devDependencies": {
-    "expect": "0.3.1",
+    "expect.js": "0.3.1",
     "mocha": "2.1.0",
     "codecov.io": "git://github.com/cainus/codecov.io.git#bfd4c4a",
     "istanbul": "0.3.2"
