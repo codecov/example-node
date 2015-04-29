@@ -16,7 +16,7 @@
   "devDependencies": {
     "expect.js": "0.3.1",
     "mocha": "2.1.0",
-    "codecov.io": "git://github.com/cainus/codecov.io.git#add-services",
+    "codecov.io": "git://github.com/cainus/codecov.io.git",
     "istanbul": "0.3.2"
   }
 }

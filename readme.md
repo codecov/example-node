@@ -20,7 +20,7 @@ Learn more at [cainus/codecov.io](https://github.com/cainus/codecov.io)
 {
   ...
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha && node_modules/codecov.io/bin/codecov.io.js"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha && cat ./coverage/coverage.json | node_modules/codecov.io/bin/codecov.io.js"
   },
   ...
 }
