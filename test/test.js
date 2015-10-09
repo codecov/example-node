@@ -8,4 +8,7 @@ describe("simple", function(){
   it("should return false", function(){
     expect(simple.math(0)).to.equal(false);
   });
+  it("should return false", function(){
+    expect(simple.math(2)).to.equal(null);
+  });
 });
