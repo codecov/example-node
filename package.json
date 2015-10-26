@@ -4,14 +4,14 @@
   "description": "Codeocv Example Node",
   "main": "script.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/codecov/example-node.git"
   },
-  "author": "Steve Peak <steve@codecov.io>",
-  "license": "Apache v2.0",
+  "author": "Codecov <hello@codecov.io>",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "expect.js": "0.3.1",
