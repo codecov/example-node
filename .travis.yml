@@ -3,5 +3,4 @@ sudo: false
 node_js:
   - '0.10'
   - '0.11'
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+
