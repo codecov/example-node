@@ -89,7 +89,7 @@ In `package.json` supply either `lcov.info` or `coverage-final.json` to `codecov
 ```javascript
 {
   "scripts": {
-    "report-coverage": "cat ./coverage/coverage-final.json | codecov",
+    "report-coverage": "codecov",
     ...
   }
   ...
