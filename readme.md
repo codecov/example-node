@@ -56,6 +56,46 @@ istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && c
 istanbul cover jasmine-node --captureExceptions spec/
 ```
 
+***With Karma:***
+
+The `lcov.info` can be used as in other configurations. Some projects experienced better results using `json` output but it is no longer enabled by default. In `karma.config.js` both can be enabled:
+
+```javascript
+module.exports = function karmaConfig (config) {
+    config.set({
+        ...
+        reporters: [
+            ...
+            // Reference: https://github.com/karma-runner/karma-coverage
+            // Output code coverage files
+            'coverage'
+        ],
+        // Configure code coverage reporter
+        coverageReporter: {
+            reporters: [
+                // generates ./coverage/lcov.info
+                {type:'lcovonly', subdir: '.'},
+                // generates ./coverage/coverage-final.json
+                {type:'json', subdir: '.'},
+            ]
+        },
+        ...
+    });
+};
+```
+
+In `package.json` supply either `lcov.info` or `coverage-final.json` to `codecov`:
+
+```javascript
+{
+  "scripts": {
+    "report-coverage": "cat ./coverage/coverage-final.json | codecov",
+    ...
+  }
+  ...
+}
+```
+
 ### [Nodeunit](https://github.com/caolan/nodeunit) + [JSCoverage](https://github.com/fishbar/jscoverage)
 
 Depend on nodeunit and jscoverage:
