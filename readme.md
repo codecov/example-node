@@ -135,3 +135,7 @@ Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomj
 ```sh
 lab -r lcov && codecov
 ```
+
+## JSX
+There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide innaccuray coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
+
