@@ -133,7 +133,7 @@ Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomj
 
 ### [Lab](https://github.com/hapijs/lab)
 ```sh
-lab -r lcov && codecov
+istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -l  && codecov
 ```
 
 ## JSX
