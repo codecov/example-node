@@ -147,6 +147,22 @@ istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -l  && codecov
 }
 ```
 
+### [Jest](https://facebook.github.io/jest/)
+Add it in your package.json:
+```javascript
+"jest": {
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
+}
+```
+
+Jest will now generate coverage files into `coverage/`
+
+Run your tests with a command like this:
+```sh
+jest && codecov
+```
+
 ## JSX
 There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide innaccuray coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
 
