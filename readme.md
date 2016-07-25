@@ -53,7 +53,7 @@ istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && c
 **With Jasmine:**
 
 ```sh
-istanbul cover jasmine-node --captureExceptions spec/
+istanbul cover node_modules\jasmine\bin\jasmine.js
 ```
 
 ***With Karma:***
