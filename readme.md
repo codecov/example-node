@@ -53,7 +53,7 @@ istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && c
 **With Jasmine:**
 
 ```sh
-istanbul cover jasmine-node --captureExceptions spec/
+istanbul cover node_modules\jasmine\bin\jasmine.js
 ```
 
 ***With Karma:***
@@ -133,7 +133,34 @@ Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomj
 
 ### [Lab](https://github.com/hapijs/lab)
 ```sh
-lab -r lcov && codecov
+istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -l  && codecov
+```
+
+### [nyc](https://github.com/bcoe/nyc)
+```javascript
+{
+  "scripts": {
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    ...
+  }
+  ...
+}
+```
+
+### [Jest](https://facebook.github.io/jest/)
+Add it in your package.json:
+```javascript
+"jest": {
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
+}
+```
+
+Jest will now generate coverage files into `coverage/`
+
+Run your tests with a command like this:
+```sh
+jest && codecov
 ```
 
 ## JSX
