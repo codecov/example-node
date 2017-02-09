@@ -14,7 +14,7 @@ NodeJS / Javascript Example
 install:
   - npm install -g codecov
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
 ```
 > **Repository tokens** are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor.
