@@ -24,6 +24,7 @@ script:
 
 ### [Mocha](http://mochajs.org/) + [Blanket.js](https://github.com/alex-seville/blanket)
 - Install [blanket.js](http://blanketjs.org/)
+- Install [mocha-lcov-reporter](https://github.com/StevenLooman/mocha-lcov-reporter)
 - Configure blanket according to [docs](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_node.md).
 - Run your tests with a command like this:
 
