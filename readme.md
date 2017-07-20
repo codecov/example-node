@@ -155,6 +155,11 @@ Add it in your package.json:
   "collectCoverage": true
 }
 ```
+or (if you have it) to .jestrc:
+```javascript
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
+```
 
 Jest will now generate coverage files into `coverage/`
 
