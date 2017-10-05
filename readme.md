@@ -148,19 +148,8 @@ istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -l  && codecov
 ```
 
 ### [Jest](https://facebook.github.io/jest/)
-Add it in your package.json:
-```javascript
-"jest": {
-  "coverageDirectory": "./coverage/",
-  "collectCoverage": true
-}
-```
-
-Jest will now generate coverage files into `coverage/`
-
-Run your tests with a command like this:
 ```sh
-jest && codecov
+jest --ci --coverage && codecov
 ```
 
 ## JSX
