@@ -158,6 +158,31 @@ jest && codecov
 
 ### JSX
 There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide inaccurate coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
+
+### [Tape](https://github.com/substack/tape)
+
+```
+istanbul cover node_modules/.bin/tape ./test/*.js
+```
+
+Or simply run:
+
+```
+istanbul cover ./test/*.js
+```
+
+Or add in package.json:
+
+```
+"test": "istanbul cover test/*.js",
+```
+
+After test:
+
+```
+codecov --token=:token
+```
+
 ## Caveats
 #### Private Repo
 Repository tokens are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor. Find your repository token at Codecov and provide via `codecov --token=:token` or `export CODECOV_TOKEN=":token"`
