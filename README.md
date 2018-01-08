@@ -22,6 +22,21 @@ script:
 
 # Produce Coverage Reports
 
+
+
+# [Codecov][0] NodeJS / Javascript Example
+
+## Guide
+### Travis Setup
+
+Add the following to your `.travis.yml`:
+```yml
+language:
+  node_js
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+### Produce Coverage Reports
 ### [Mocha](http://mochajs.org/) + [Blanket.js](https://github.com/alex-seville/blanket)
 - Install [blanket.js](http://blanketjs.org/)
 - Configure blanket according to [docs](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_node.md).
@@ -165,4 +180,25 @@ jest && codecov
 
 ## JSX
 There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide inaccurate coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
+## Caveats
+#### Private Repo
+You will need to add the following your `.travis.yml`:
+```yml
+env:
+  global:
+    - CODECOV_TOKEN=:uuid-repo-token
+```
+## Support
 
+### FAQ
+- Q:  Ask question?<br/>A: Give answer.
+- Q:  Ask question?<br/>A: Give answer.
+### Contact
+- Intercom (in-app messanger)
+- Email: support@codecov.io
+- Slack: slack.codecov.io
+- [gh/codecov/support](https://github.com/codecov/support)
+
+View source and learn more about [Codecov Global Uploader](https://github.com/codecov/codecov-bash)
+
+[0]: https://codecov.io/
