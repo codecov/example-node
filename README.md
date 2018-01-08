@@ -1,27 +1,3 @@
-NodeJS / Javascript Example
-===========================
-
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] | IRC #codecov |
-| ----------------------- | ------------- | --------------------- | ------------ |
-
-[1]: https://codecov.io/
-[2]: https://twitter.com/codecov
-[3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-bash
-
-
-```yml
-install:
-  - npm install -g codecov
-script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
-```
-> **Repository tokens** are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor.
-> Find your repository token at Codecov and provide via `codecov --token=:token` or `export CODECOV_TOKEN=":token"`
-
-# Produce Coverage Reports
-
 
 
 # [Codecov][0] NodeJS / Javascript Example
