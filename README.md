@@ -1,5 +1,3 @@
-
-
 # [Codecov][0] NodeJS / Javascript Example
 
 ## Guide
@@ -9,8 +7,11 @@ Add the following to your `.travis.yml`:
 ```yml
 language:
   node_js
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+install:
+  - npm install -g codecov
+script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
 ```
 ### Produce Coverage Reports
 ### [Mocha](http://mochajs.org/) + [Blanket.js](https://github.com/alex-seville/blanket)
@@ -158,12 +159,7 @@ jest && codecov
 There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide inaccurate coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
 ## Caveats
 #### Private Repo
-You will need to add the following your `.travis.yml`:
-```yml
-env:
-  global:
-    - CODECOV_TOKEN=:uuid-repo-token
-```
+Repository tokens are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor. Find your repository token at Codecov and provide via `codecov --token=:token` or `export CODECOV_TOKEN=":token"`
 ## Support
 
 ### FAQ
