@@ -172,6 +172,7 @@ Repository tokens are required for (a) all private repos, (b) public repos not u
 - Slack: slack.codecov.io
 - [gh/codecov/support](https://github.com/codecov/support)
 
-View source and learn more about [Codecov Global Uploader](https://github.com/codecov/codecov-bash)
+1. More documentation at https://docs.codecov.io
+2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
 
 [0]: https://codecov.io/
