@@ -156,7 +156,7 @@ Run your tests with a command like this:
 jest && codecov
 ```
 
-## JSX
+### JSX
 There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide inaccurate coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
 ## Caveats
 #### Private Repo
