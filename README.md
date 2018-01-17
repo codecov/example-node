@@ -1,27 +1,20 @@
-NodeJS / Javascript Example
-===========================
+# [Codecov][0] NodeJS / Javascript Example
 
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] | IRC #codecov |
-| ----------------------- | ------------- | --------------------- | ------------ |
+## Guide
+### Travis Setup
 
-[1]: https://codecov.io/
-[2]: https://twitter.com/codecov
-[3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-bash
-
-
+Add the following to your `.travis.yml`:
 ```yml
+language:
+  node_js
 install:
   - npm install -g codecov
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
 ```
-> **Repository tokens** are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor.
-> Find your repository token at Codecov and provide via `codecov --token=:token` or `export CODECOV_TOKEN=":token"`
-
-# Produce Coverage Reports
-
+The first script line will change depending on your coverage collecting tool, see below.
+### Produce Coverage Reports
 ### [Mocha](http://mochajs.org/) + [Blanket.js](https://github.com/alex-seville/blanket)
 - Install [blanket.js](http://blanketjs.org/)
 - Configure blanket according to [docs](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_node.md).
@@ -163,6 +156,22 @@ Run your tests with a command like this:
 jest && codecov
 ```
 
-## JSX
+### JSX
 There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/istanbul) not working properly with JSX files, which provide inaccurate coverage results. Please try using [ambitioninc/babel-istanbul](https://github.com/ambitioninc/babel-istanbul).
+## Caveats
+#### Private Repo
+Repository tokens are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor. Find your repository token at Codecov and provide via `codecov --token=:token` or `export CODECOV_TOKEN=":token"`
+## Support
 
+### FAQ
+- Q: Is there a TypeScript example?<br/>A: Yes [codecov/example-typescript](https://github.com/codecov/example-typescript).
+### Contact
+- Intercom (in-app messanger)
+- Email: support@codecov.io
+- Slack: slack.codecov.io
+- [gh/codecov/support](https://github.com/codecov/support)
+
+1. More documentation at https://docs.codecov.io
+2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
+
+[0]: https://codecov.io/
