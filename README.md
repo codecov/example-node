@@ -167,8 +167,8 @@ Repository tokens are required for (a) all private repos, (b) public repos not u
 - Q: Is there a TypeScript example?<br/>A: Yes [codecov/example-typescript](https://github.com/codecov/example-typescript).
 ### Contact
 - Intercom (in-app messanger)
-- Email: support@codecov.io
-- Slack: slack.codecov.io
+- Email: [support@codecov.io](mailto:support@codecov.io)
+- Slack: [slack.codecov.io](https://slack.codecov.io)
 - [gh/codecov/support](https://github.com/codecov/support)
 
 1. More documentation at https://docs.codecov.io
