@@ -133,7 +133,7 @@ istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -l  && codecov
 ```javascript
 {
   "scripts": {
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     ...
   }
   ...
