@@ -175,3 +175,5 @@ Repository tokens are required for (a) all private repos, (b) public repos not u
 2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
 
 [0]: https://codecov.io/
+
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
