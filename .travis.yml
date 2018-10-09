@@ -1,9 +1,12 @@
 language: node_js
 sudo: false
 node_js:
-  - "4.1"
-  - "4.0"
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
 install:
-  - npm install
+  - cd istanbul-mocha && npm install
 script:
-  - npm test
+  - cd istanbul-mocha && npm test
