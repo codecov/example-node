@@ -7,6 +7,6 @@ node_js:
   - 7
   - 6
 install:
-  - cd istanbul-mocha && npm install
+  - cd istanbul-mocha && npm install && cd ..
 script:
   - cd istanbul-mocha && npm test
