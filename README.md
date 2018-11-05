@@ -46,7 +46,7 @@ istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && c
 **With Jasmine:**
 
 ```sh
-istanbul cover node_modules\jasmine\bin\jasmine.js
+istanbul cover ./node_modules/jasmine/bin/jasmine.js
 ```
 
 ***With Karma:***
