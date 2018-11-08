@@ -161,6 +161,12 @@ There have been reports of [gotwarlost/istanbul](https://github.com/gotwarlost/i
 ## Caveats
 #### Private Repo
 Repository tokens are required for (a) all private repos, (b) public repos not using Travis-CI, CircleCI or AppVeyor. Find your repository token at Codecov and provide via `codecov --token=:token` or `export CODECOV_TOKEN=":token"`
+
+## Common Pitfalls
+
+### [`mock-fs`](https://github.com/tschaub/mock-fs)
+When using `mock-fs` make sure to run `mock.restore()` when your tests are done running, or else the reports wont get generated on the CI.
+
 ## Support
 
 ### FAQ
