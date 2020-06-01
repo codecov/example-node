@@ -1,5 +1,10 @@
 # [Codecov][0] NodeJS / Javascript Example
 
+## Install
+```sh
+npm install -g codecov
+```
+
 ## Guide
 ### Travis Setup
 
