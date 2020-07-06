@@ -35,12 +35,12 @@ In mocha, if you've got your code instrumented for coverage, the command for a t
 YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha test -R mocha-lcov-reporter
 ```
 
-### [Istanbul](https://github.com/gotwarlost/istanbul)
+### [Istanbul](https://istanbul.js.org/)
 
 **With Mocha:**
 
 ```sh
-istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov
+nyc mocha --report lcovonly -- -R spec && codecov
 ```
 
 **With Jasmine:**
