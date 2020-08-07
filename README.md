@@ -1,6 +1,10 @@
 # [Codecov][0] NodeJS / Javascript Example
 
 ## Guide
+
+You can install Codecov by adding
+```sh
+npm install -g codecov
 ### Travis Setup
 
 Add the following to your `.travis.yml`:
