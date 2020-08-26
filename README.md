@@ -1,4 +1,6 @@
 # [Codecov][0] NodeJS / Javascript Example
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-node.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-node?ref=badge_shield)
+
 
 ## Guide
 
@@ -209,3 +211,7 @@ When using `mock-fs` make sure to run `mock.restore()` when your tests are done 
 [0]: https://codecov.io/
 
 We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-node.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-node?ref=badge_large)
