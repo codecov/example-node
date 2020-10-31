@@ -46,7 +46,7 @@ YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha test -R mocha-lcov-reporter
 **With Mocha:**
 
 ```sh
-nyc mocha --report lcovonly -- -R spec && codecov
+nyc --reporter=lcov mocha && codecov
 ```
 
 **With Jasmine:**
