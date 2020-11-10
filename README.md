@@ -13,7 +13,7 @@ Add the following to your `.travis.yml`:
 ```yml
 language:
   node_js
-install:
+before_install:
   - npm install -g codecov
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
