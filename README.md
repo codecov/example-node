@@ -7,9 +7,12 @@
 You can install Codecov by adding
 ```sh
 npm install -g codecov
+```
+
 ### Travis Setup
 
 Add the following to your `.travis.yml`:
+
 ```yml
 language:
   node_js
@@ -18,7 +21,9 @@ before_install:
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
+
 ```
+
 The first script line will change depending on your coverage collecting tool, see below.
 ### Produce Coverage Reports
 ### [Mocha](http://mochajs.org/) + [Blanket.js](https://github.com/alex-seville/blanket)
