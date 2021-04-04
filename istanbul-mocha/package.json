@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codecov/example-node.git"
+    "url": "https://github.com/dtonghm/example-node.git"
   },
   "author": "Codecov <hello@codecov.io>",
   "license": "MIT",
