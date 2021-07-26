@@ -129,7 +129,7 @@ npm run codecov
 
 ```yaml
 - name: Codecov
-  uses: codecov/codecov-action@v1
+  uses: codecov/codecov-action@v2
   with:
     token: ${{ secrets.CODECOV_TOKEN }}
     flags: unittests
