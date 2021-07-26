@@ -125,6 +125,16 @@ Run your tests with a command like this:
 npm run codecov
 ```
 
+### [GitHub Actions](https://github.com/codecov/codecov-action)
+
+```yaml
+- name: Codecov
+  uses: codecov/codecov-action@v2
+  with:
+    token: ${{ secrets.CODECOV_TOKEN }}
+    flags: unittests
+```
+
 ### [Poncho](https://github.com/deepsweet/poncho)
 Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomjs), [Mocha](http://mochajs.org/) and [Blanket](https://github.com/alex-seville/blanket):
 - [Configure](http://mochajs.org/#running-mocha-in-the-browser) Mocha for browser
