@@ -125,7 +125,7 @@ Run your tests with a command like this:
 npm run codecov
 ```
 
-### [Github Actions](https://github.com/codecov/codecov-action)
+### [GitHub Actions](https://github.com/codecov/codecov-action)
 
 ```yaml
 - name: Codecov
