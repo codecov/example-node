@@ -1,10 +1,10 @@
 {
   "name": "codecov-example-node",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Codecov Example Node",
-  "main": "script.js",
+  "main": "app/calculator.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov -F istanbul_mocha"
+    "test": "c8 --reporter=lcov --reporter=text node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=junit --test-reporter-destination=junit.xml"
   },
   "repository": {
     "type": "git",
@@ -12,11 +12,7 @@
   },
   "author": "Codecov <hello@codecov.io>",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "expect.js": "^0.3.1",
-    "mocha": "^5.2.0",
-    "istanbul": "^0.4.5",
-    "codecov": "3.7.2"
+    "c8": "^10.1.3"
   }
 }
